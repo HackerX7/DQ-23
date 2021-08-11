@@ -188,3 +188,10 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
+    buttons = [
+        [
+            InlineKeyboardButton('🧑‍💻 Master, url='https://t.me/Hacker_Jr'),
+            InlineKeyboardButton('Master Info ⚜️', url='https://t.me/Hacker_Jr_Info')
+        ]
+        ]
+    await message.reply(text="<b>no one gonna help you 🤣🤣 \nContact ▷ @Hacker_Jr </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
