@@ -101,11 +101,11 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐇𝐞𝐫𝐞", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("⚠️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Kerala_Rockers")
+                        InlineKeyboardButton("🧑‍💻 𝐂𝐫𝐞𝐚𝐭𝐨𝐫", url="https://t.me/Hacker_Jr")
                     ],
                     [
-                        InlineKeyboardButton("🧑‍💻 𝐂𝐫𝐞𝐚𝐭𝐨𝐫", url="https://t.me/Hacker_Jr"),
-                        InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭", callback_data="help")
+                        InlineKeyboardButton("🔰 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/KL_GROUP1"),
+                        InlineKeyboardButton("⚠️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Kerala_Rockers")
                      ] 
                   ] 
                )
