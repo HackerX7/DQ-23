@@ -100,14 +100,16 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔎Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Join Channel⚜️", url="https://t.me/Kerala_Rockers")
-                    ]
-                ]
-            )
-        )
-
-
+                        InlineKeyboardButton("🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐇𝐞𝐫𝐞", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("⚠️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Kerala_Rockers")
+                    ],
+                    [
+                        InlineKeyboardButton("🧑‍💻 𝐂𝐫𝐞𝐚𝐭𝐨𝐫", url="https://t.me/Hacker_Jr"),
+                        InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭", callback_data="about")
+                     ] 
+                  ] 
+               )
+           )
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
     """Send basic information of channel"""
@@ -194,5 +196,16 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Master Info ⚜️', url='https://t.me/Hacker_Jr_Info')
         ]
         ]
-    await message.reply(text=f"<b>no one gonna help you 🤣🤣\n\nContact ▷ @Hacker_Jr </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="""<b>○ Mʏ Nᴀᴍᴇ :  Dǫ 2.5
 
+○ Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ
+
+○ Fʀᴀᴍᴇᴡᴏʀᴋ : Pʏʀᴏɢʀᴀᴍ
+
+○ Sᴇʀᴠᴇʀ : Hᴇʀᴏᴋᴜ
+
+○ Vᴇʀsɪᴏɴ : 3.0.0
+
+○ ᴄʀᴇᴀᴛᴏʀ : <a href="https://t.me/Hacker_Jr">Hᴀᴄᴋᴇʀ Jʀ</a>
+
+○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 🔐 </b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
