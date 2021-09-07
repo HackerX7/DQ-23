@@ -105,7 +105,7 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("🧑‍💻 𝐂𝐫𝐞𝐚𝐭𝐨𝐫", url="https://t.me/Hacker_Jr"),
-                        InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭", callback_data="about")
+                        InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭", callback_data="help")
                      ] 
                   ] 
                )
