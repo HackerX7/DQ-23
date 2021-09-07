@@ -209,3 +209,15 @@ async def bot_info(bot, message):
 ○ ᴄʀᴇᴀᴛᴏʀ : <a href="https://t.me/Hacker_Jr">Hᴀᴄᴋᴇʀ Jʀ</a>
 
 ○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 🔐 </b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+@Client.on_message(filters.command('help'))
+async def bot_info(bot, message):
+    buttons = [
+        [
+            InlineKeyboardButton('🔰 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/KL_GROUP1'),
+            InlineKeyboardButton('🎥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/KERALA_ROCKERS')
+        ]
+        ]
+    await message.reply(text="""<b>നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ help ചോയ്ച്ച് വന്നിരിക്കുന്നു...ഇവിടെ help ഉം കൊണ്ട് വന്നിട്ട് ഒരു കാര്യവും ഇല്ല.😜
+
+Cᴏɴᴛᴀᴄᴛ Bʏ ▷ <a href="https://t.me/Hacker_Jr">Hᴀᴄᴋᴇʀ Jʀ</a></b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
