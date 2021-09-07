@@ -82,10 +82,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 8.5/10\n🎭 Genres : Romance, Adult</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 8.5/10\n🎭 Genres : Romance, Adult\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 7.5/10\n🎭 Genres : Document, 🔪 Drama, Thriller, Comedy</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 7.5/10\n🎭 Genres : Document, 🔪 Drama, Thriller, Comedy\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -101,9 +101,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 6.5/10\n🎭 Genres : Entertainment, Thriller</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 6.5/10\n🎭 Genres : Entertainment, Thriller\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 6.8/10\n🎭 Genres : Mystery, Thriller</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 6.8/10\n🎭 Genres : Mystery, Thriller\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -146,9 +146,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 10.7/10\n🎭 Genres : Document, Drama, Climax Thriller­</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 10.7/10\n🎭 Genres : Document, Drama, Climax Thriller\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a>­</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 7.3/10\n🎭 Genres : Musical, Rhythm</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 7.3/10\n🎭 Genres : Musical, Rhythm\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -164,9 +164,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 5.7/10\n🎭 Genres : Biography, Documentary</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 5.7/10\n🎭 Genres : Biography, Documentary\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 8.4/10\n🎭 Genres : Horror, Thriller</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬 Film/Series : {search}\n🌟 IMDB Rating : 8.4/10\n🎭 Genres : Horror, Thriller\n\n© Bʏ ▷ <a href="https://t.me/Kerala_Rockers"> Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
