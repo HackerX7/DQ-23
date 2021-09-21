@@ -10,10 +10,10 @@ from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
 PEAKY = [
-"https://telegra.ph/file/70566ab32dcd8b8fcd39b.jpg",
-"https://telegra.ph/file/e9287e30ae3b64794e09c.jpg",
-"https://telegra.ph/file/a0ccf864a4545eba79221.jpg",
-"https://telegra.ph/file/169241e67da34a6bd95e8.jpg",
+"https://telegra.ph/file/cd637bb8ea2c7fa564cda.jpg",
+"https://telegra.ph/file/88dbd692b4ec2c2ebf87a.jpg",
+"https://telegra.ph/file/b51370bf2835ed26ffa81.jpg",
+"https://telegra.ph/file/1dd06678aed0fd083b2d2.jpg",
  ]
 
 @Client.on_message(filters.command("start"))
