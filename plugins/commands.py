@@ -1,5 +1,6 @@
 import os
 import logging
+import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
@@ -7,12 +8,13 @@ from utils import Media, get_file_details
 from info import TUTORIAL 
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
+
 PEAKY = [
 "https://telegra.ph/file/70566ab32dcd8b8fcd39b.jpg",
 "https://telegra.ph/file/e9287e30ae3b64794e09c.jpg",
 "https://telegra.ph/file/a0ccf864a4545eba79221.jpg",
 "https://telegra.ph/file/169241e67da34a6bd95e8.jpg",
-         ]
+ ]
 
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
@@ -100,7 +102,7 @@ async def start(bot, cmd):
         )
     else:
         await cmd.reply_photo(
-            photo="https://telegra.ph/file/cd637bb8ea2c7fa564cda.jpg",
+            photo=random.choice(PEAKY),
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
