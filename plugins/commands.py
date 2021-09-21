@@ -204,15 +204,6 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text="""<b>○ Mʏ Nᴀᴍᴇ :  Dǫ 2.5
-    
-○ Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ
-
-○ Fʀᴀᴍᴇᴡᴏʀᴋ : Pʏʀᴏɢʀᴀᴍ
-
-○ Sᴇʀᴠᴇʀ : Hᴇʀᴏᴋᴜ
-
-○ ᴄʀᴇᴀᴛᴏʀ : <a href="https://t.me/Hacker_Jr">Hᴀᴄᴋᴇʀ Jʀ</a>
-
 ○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 🔐</b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
