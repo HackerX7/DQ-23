@@ -191,23 +191,21 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🧑‍💻 Master', url='https://t.me/Hacker_Jr'),
-            InlineKeyboardButton('Master Info ⚜️', url='https://t.me/Hacker_Jr_Info')
+            InlineKeyboardButton('🎥 CHANNEL', url='https://t.me/kerala_Rockers'),
+            InlineKeyboardButton('🔰 GROUP', url='https://t.me/Kl_group1')
         ]
         ]
     await message.reply(text="""<b>○ Mʏ Nᴀᴍᴇ :  Dǫ 2.5
-
+    
 ○ Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ
 
 ○ Fʀᴀᴍᴇᴡᴏʀᴋ : Pʏʀᴏɢʀᴀᴍ
 
 ○ Sᴇʀᴠᴇʀ : Hᴇʀᴏᴋᴜ
 
-○ Vᴇʀsɪᴏɴ : 3.0.0
-
 ○ ᴄʀᴇᴀᴛᴏʀ : <a href="https://t.me/Hacker_Jr">Hᴀᴄᴋᴇʀ Jʀ</a>
 
-○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 🔐 </b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 🔐</b>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
